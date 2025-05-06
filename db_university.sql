@@ -27,6 +27,8 @@ SET time_zone = "+00:00";
 --
 -- Struttura della tabella `courses`
 --
+CREATE DATABASE IF NOT EXISTS db_university;
+USE db_university;
 
 CREATE TABLE `courses` (
   `id` bigint(20) UNSIGNED NOT NULL,

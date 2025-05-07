@@ -25,3 +25,15 @@ INNER JOIN `course_teacher`
 WHERE `teacher_id` = "44";
 ```
 ----
+
+## 4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
+```
+SELECT *
+FROM `students`
+INNER JOIN `degrees`
+ON degrees.id = students.degree_id
+INNER JOIN `departments`
+ON departments.id = degrees.department_id
+ORDER BY `surname` ASC;
+```
+----
